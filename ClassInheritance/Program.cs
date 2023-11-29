@@ -268,7 +268,7 @@ namespace class_inheritance
 						break;
 					case ConsoleKey.Escape:
 						Console.Clear();
-						Console.WriteLine($"Приходите еще!!!");
+						Console.WriteLine($"Заходите еще!!!");
 						break;
 					default:
 						Console.Clear();
