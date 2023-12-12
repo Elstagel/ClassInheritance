@@ -8,10 +8,10 @@ namespace class_inheritance
 {
 	abstract class Product							//продукты баз.класс
 	{
-		protected string name;
-		protected string manufacturer;						//производитель
-		protected double price;
-		protected int count;
+		public string name { get; set; }
+		public string manufacturer { get; set; }                    //производитель
+		public double price { get; set; }
+		public int count { get; set; }
 				
 		public virtual void Print() 
 		{
@@ -26,7 +26,6 @@ namespace class_inheritance
 		//public void SetName(string name) { this.name = name; }
 		//public void SetManufacturer(string manufacturer) { this.manufacturer = manufacturer; }
 		//public void SetPrice(double price) { _ = price > 0 ? this.price = price : this.price = 0; }
-		public void SetCount(int count)	{ _ = count > 0 ? this.count = count : this.count = 0; }
 		public void AddCount(int count)	{ _ = count > 0 ? this.count += count : this.count = 0; }
 		public void DellCount(int count)	
 		{
@@ -39,8 +38,7 @@ namespace class_inheritance
 				this.count = 0;
 			}
 		}
-		
-		
+				
 		public double SumPrice()
 		{
 			return _ = price * count;

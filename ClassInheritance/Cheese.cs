@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace class_inheritance
 {
-	class Cheese : Food,IData                      //сыр
+	class Cheese : Food,IData                  //сыр
 	{
 
 		public Cheese(string name, string manufacturer, double price, int count)
@@ -38,5 +38,6 @@ namespace class_inheritance
 
 			Console.WriteLine($"Дата производства: {date.ToShortDateString()} - {date.AddMonths(6).ToShortDateString()}");
 		}
+
 	}
 }
